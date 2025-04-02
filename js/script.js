@@ -3,9 +3,11 @@
 // Created by: Mr. Coxall
 // Created on: Sep 2020
 // This file contains the JS functions for index.htm
+"use strict";
+
 function hoursWorked() {
     const TAX = 20.05;
-    let hoursWorked = parseInt(document.getElementById('hours-worked').value)
+    let hoursWorked = parseFloat(document.getElementById('hours-worked').value)
     let hourlyRate = parseFloat(document.getElementById('hourly-rate').value)
     let gross = hoursWorked * hourlyRate;
     let govPay = gross * TAX / 100;
